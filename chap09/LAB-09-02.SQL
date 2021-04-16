@@ -1,0 +1,12 @@
+-- 테이블 생성
+DROP TABLE EMP01 CASCADE CONSTRAINTS;
+CREATE TABLE EMP01( 
+EMPNO NUMBER(4), 
+ENAME VARCHAR2(20), 
+SAL NUMBER(7, 2));
+
+-- 생성된 테이블의 내용을 확인한다.
+SELECT * FROM EMP01;
+
+-- 테이블의 구조를 DESC 명령어로 확인할 수 있다.
+DESC EMP01

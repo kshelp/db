@@ -1,0 +1,8 @@
+-- EMP 테이블과 동일한 내용과 구조를 갖는 EMP02 테이블을 생성한다.
+DROP TABLE EMP02 CASCADE CONSTRAINTS;
+CREATE TABLE EMP02 
+AS 
+SELECT * FROM EMP;
+
+-- 새롭게 생성된 EMP02 테이블의 구조는 EMP 테이블과 동일하다.
+DESC EMP02
