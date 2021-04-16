@@ -1,0 +1,21 @@
+1. emp 테이블을 구성하는 각 컬럼의 데이터 형태에 대해서 설명하세요.
+
+
+SQL> DESC EMP
+ 이름                                      널?      유형
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR                                                NUMBER(4)
+ HIREDATE                                           DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             NUMBER(2)
+
+SQL> 
+
+<정답>
+컬럼 이름	자료형 성명
+EMPNO		정수로 최대 4자리
+ENAME		가변형 문자열로 최대 10자리
