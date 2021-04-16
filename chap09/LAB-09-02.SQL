@@ -9,4 +9,4 @@ SAL NUMBER(7, 2));
 SELECT * FROM EMP01;
 
 -- 테이블의 구조를 DESC 명령어로 확인할 수 있다.
-DESC EMP01
+DESC EMP01;

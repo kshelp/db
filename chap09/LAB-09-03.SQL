@@ -5,4 +5,5 @@ AS
 SELECT * FROM EMP;
 
 -- 새롭게 생성된 EMP02 테이블의 구조는 EMP 테이블과 동일하다.
+SELECT * FROM EMP02;
 DESC EMP02

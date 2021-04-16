@@ -1,4 +1,4 @@
-
+DROP TABLE SAM03;
 -- 해당 컬럼은 날짜를 위한 3자리와 초를 위한 2자리(자릿수를 생략했기 때문)를 마련한다.
 CREATE TABLE SAM03( 
 DAY01 INTERVAL DAY(3) TO SECOND);
