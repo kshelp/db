@@ -1,0 +1,16 @@
+[과제] 과제-08-01.TXT
+SQL> CONN ORA_USER/HONG 로 접속하여 SQL문을 작성하세요.	
+
+1. 101번 사원에 대해 아래의 결과를 산출하는 쿼리를 작성해 보자. 
+---------------------------------------------------------------------------------------
+사번   사원명   job명칭 job시작일자  job종료일자   job수행부서명
+---------------------------------------------------------------------------------------
+<정답>
+  
+2. 다음의 쿼리를 ANSI 문법으로 변경해 보자.
+SELECT a.department_id, a.department_name
+  FROM departments a, employees b
+ WHERE a.department_id = b.department_id
+   AND b.salary > 3000
+ORDER BY a.department_name;
+<정답>

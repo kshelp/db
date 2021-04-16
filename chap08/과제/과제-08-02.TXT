@@ -1,0 +1,17 @@
+[과제] 과제-08-02.TXT
+1. 다음의 두 쿼리를 ANY, ALL을 사용해서 동일한 결과를 추출하도록 변경해보자.
+(단, SQL> CONN ORA_USER/HONG 로 접속하여 SQL문을 작성하세요.)
+SELECT employee_id, salary 
+  FROM employees
+WHERE salary IN (2000, 3000, 4000)
+ORDER BY employee_id;
+SELECT employee_id, salary 
+  FROM employees
+WHERE salary NOT IN (2000, 3000, 4000)
+ORDER BY employee_id;
+<정답>
+
+
+2. IN연산자를 이용하여 부서별로 가장 많은 급여를 받는 사원의 정보(사원번호,사원명,급여,부서번호)를 출력하는 SQL문을 작성 하세요? 
+(단, SQL> CONN SCOTT/TIGER 로 접속하여 SQL문을 작성하세요.)
+<정답>
