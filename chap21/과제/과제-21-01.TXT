@@ -1,0 +1,32 @@
+[과제] 과제-21-01.TXT
+SQL> CONN ORA_USER/HONG 로 접속하여 SQL문을 작성하세요.	
+  
+1. 다음과 같이 부서테이블의 복사본을 만든다. 
+
+CREATE TABLE ch10_departments 
+AS
+SELECT department_id, department_name 
+  FROM departments;
+  
+  
+ALTER TABLE ch10_departments ADD CONSTRAINTS pk_ch10_departments PRIMARY KEY (department_id);  
+  
+  
+부서번호, 부서명, 작업 flag(I: insert, U:update, D:delete)을 매개변수로 받아 ch10_departments 테이블에 
+각각 INSERT, UPDATE, DELETE 하는 ch10_iud_dep_proc 란 이름의 프로시저를 만들어보자.
+
+<정답>
+                 
+
+2. 다음과 같이 프로시저를 실행해 보고 결과가 어떻게 나왔는지 그 이유를 설명하라. 
+
+   EXEC ch10_iud_dep_proc (10, '총무기획부', 'I');
+   
+<정답>
+
+
+3. ch10_iud_dep_proc 에서 시스템 예외 처리 로직을 추가해 보자. 예외가 발생할 경우 ROLLBACK 하도록 한다. 그리고 2번 문제의 프로시저를 실행해보고 결과를 확인해보자. 
+
+<정답>
+ 
+ 
